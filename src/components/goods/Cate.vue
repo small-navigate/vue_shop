@@ -56,6 +56,7 @@
                     <el-input v-model="addCateForm.cat_name"></el-input>
                 </el-form-item>
                 <el-form-item label="父级分类:">
+                  <!-- 级联选择框 -->
                     <!-- options 用来指定数据源 -->
                     <!-- props用来指定配置对象 -->
                      <el-cascader
