@@ -8,6 +8,9 @@ import Rigths from '../components/power/Rights.vue'
 import Roles from '../components/power/Roles.vue'
 import Cate from '../components/goods/Cate.vue'
 import Params from '../components/goods/Params.vue'
+import Add from '../components/goods/Add.vue'
+// eslint-disable-next-line camelcase
+import GoodsList from '../components/goods/Goods_list.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -23,7 +26,9 @@ const routes = [
       { path: '/rights', component: Rigths },
       { path: '/roles', component: Roles },
       { path: '/categories', component: Cate },
-      { path: '/params', component: Params }
+      { path: '/params', component: Params },
+      { path: '/goods', component: GoodsList },
+      { path: '/goods/add', component: Add }
     ]
   }
 ]
