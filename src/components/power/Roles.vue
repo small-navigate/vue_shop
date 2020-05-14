@@ -15,7 +15,7 @@
                 </el-col>
             </el-row>
             <!-- 角色列表区域 -->
-            <el-table :data="rolelist" border stripe>
+            <el-table :data="rolelist" border stripe row-key="id" >
                 <el-table-column type="expand">
                     <template slot-scope="scope">
                         <el-row v-for="( item1,i1 ) in scope.row.children" :key="item1.id"
@@ -151,6 +151,7 @@ export default {
         return this.$message.error(res.meta.msg)
       }
       this.rolelist = res.data
+      console.log(this.rolelist)
     },
     // 根据id删除对应权限
     async removeRightById (role, rightId) {
